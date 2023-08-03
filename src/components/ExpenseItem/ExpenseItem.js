@@ -5,6 +5,9 @@ import Card from "../ Card/Card";
 
 const ExpenseItem = (props) => {
   const [AddItem, setAddItem] = useState();
+  const changeHandler = () => {
+    setAddItem("");
+  };
   return (
     <Card className="expense-item">
       <ExpenseDate date={props.date} />
