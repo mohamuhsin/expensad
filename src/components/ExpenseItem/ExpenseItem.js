@@ -6,7 +6,7 @@ import Card from "../ Card/Card";
 const ExpenseItem = (props) => {
   const [AddItem, setAddItem] = useState();
   const changeHandler = () => {
-    setAddItem("");
+    setAddItem("update");
   };
   return (
     <Card className="expense-item">
